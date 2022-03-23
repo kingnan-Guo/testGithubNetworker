@@ -1,0 +1,133 @@
+
+配置环境变量
+D:\ProgramData\Anaconda3\Scripts
+
+activate
+
+
+activate tf2
+
+我们在命令行输入conda upgrade --all 先把所有工具包进行升级
+
+creat: conda  create  --name  tf2  python=3.7
+离线创建
+conda config --set offline true
+
+
+
+jupyter notebook
+
+
+conda create -n py36 python=3.6 
+
+pip install numpy -i http://pypi.mirrors.ustc.edu.cn/simple/
+conda  install numpy 
+ -i http://mirrors.aliyun.com/pypi/simple/
+
+pip install tensorflow==2.0.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install pylint yapf\
+pip install djangorestframework  -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install markdown -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install mysqlclient -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple
+图片处理
+pip install pillow -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install Django==2.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+conda install -chttps://conda.binstar.org/menpo opencv
+
+pip install opencv -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install D:/ProgramData/page/hdf5-1.10.2-hac2f561_1.tar.bz2
+
+pip install hdf  -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install opencv_python -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+ 
+REST_FRAMEWORK 设置---------------------------------
+rest_framework
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAdminUser',
+    ],
+    'PAGE_SIZE': 10
+}
+
+
+
+Djano-------------------------
+
+django-admin startproject HelloWorld
+python manage.py runserver 8001
+
+创建app
+python manage.py startapp user
+
+
+python manager.py shell
+
+startapp pageName
+
+
+
+
+
+
+django-admin startproject myblog
+
+
+创建应用
+pythonmanage.py startapp blog
+
+
+添加应用名到 settings.py 中的 installed_Apps
+
+创建数据表
+python manage.py makemigrations
+
+数据迁移
+python manage.py migrate
+
+创建的是 INSTALLED_APPS 内的数据迁移
+
+
+生成数据表
+python manage.py sqlmigrate 
+
+
+admin 创建超级用户
+python manag.py createsuperuser
+
+
+
+makemigrations users
+
+migrate users
+
+mysql--------------
+net start mysql
+
+net stop mysql
+
+mysql -u root -p 进入
+D:\ProgramData\mysql5.5.27\bin\mysql.exe
+
+
+
+
+
+
+path------------------------------------------------------- 
+D:\ProgramData\Anaconda3\Scripts
+
+
+
+D:\Programs\nodejs;C:\Users\90175\AppData\Roaming\npm;%PyCharm Community Edition%
+
+C:\Users\90175\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\90175\AppData\Local\Programs\Python\Python37\;C:\Users\90175\AppData\Roaming\npm,D:\Programs\nodejs;C:\Users\90175\AppData\Roaming\npm;%PyCharm Community Edition%
+
+
+
+SimSun
+Monokai
+Editor> color scheme >General > text> Default text > bactground =    #212121
