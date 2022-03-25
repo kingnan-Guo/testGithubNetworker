@@ -13,10 +13,13 @@ void outer(){
 }
 
 // 0 方式定时器中断
+// 外部 INT0 作为 出发条件 
 void outer0() interrpt 0 using 0{
     EX0 = 0
 }
 
+
+// 1、如果外部中断不够用 可以使用定时器中断 ，初值 TH1 = 0xff; 再加1 就会进入到中断 中
 int main()
 {
     
