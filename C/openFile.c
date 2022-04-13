@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     // fp = fopen(fileName, "W");
     // fp = fopen("fileData.dat", "w+");
     fp = fopen("fileData1.dat", "w");
-    printf("fp = %x \r\n", fp);
+    // printf("fp = %x \r\n", fp);
     // return 0;
     ch = getchar(); //这里是getchar()，程序运行时碰到这个语句，会暂停程序的运行，在控制台出现一个闪烁的光标，等待用户输入一个签字
 
