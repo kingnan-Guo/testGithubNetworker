@@ -58,7 +58,7 @@ int main()
     printf("enter data \r\n");
     for (i = 0; i < SIZE; i++)
     {
-        scanf("%s %d %d %s", student[i].name, &student[i].num, &student[i].age, student[i].addr);
+        scanf("%s%d%d%s", student[i].name, &student[i].num, &student[i].age, student[i].addr);
     }
     save();
     return 0;

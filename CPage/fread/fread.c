@@ -29,7 +29,10 @@ int main()
     int i;
     // printf("enter data \r\n");
     FILE * fp;
-    fp = fopen("student.dat", "rb");
+    // fp = fopen("student.dat", "rb");
+    // fp = fopen("student2.dat", "rb");
+    fp = fopen("studentw2.dat", "rb");
+    
     
     for (i = 0; i < SIZE; i++)
     {
