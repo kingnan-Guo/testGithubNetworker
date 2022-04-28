@@ -20,11 +20,11 @@ class Shape{
         void setHeight(int hei){
             height = hei;
         };
-        // Shape(int w,int h)
-        // {
-        //     width=w;
-        //     height=h;
-        // };
+        Shape(int w,int h)
+        {
+            width=w;
+            height=h;
+        };
     protected:
         int width;
         int height;
@@ -49,6 +49,10 @@ class Rectange: public Shape, public paintCost{
         //     width=a;
         //     height=b;
         // };
+        // Rectange(int a,int b){
+        //     Shape(a,b);
+        // };
+        
 };
 
 /**
@@ -57,29 +61,32 @@ class Rectange: public Shape, public paintCost{
  * @return int 
  */
 
-// class Rectange2: public Shape{
-//     public:
-//         Rectange2(int a,int b): Shape(a, b){
+// 可以把基类的构造函数放在子类构造函数的初始化列表上，以此实现调用基类的构造函数来为子类从基类继承的成员变量初始化。
+class RectangeSecond: public Shape{
+    public:
+        RectangeSecond(int a,int b):Shape(a, b){
             
-//         };
-// };
+        };
+};
 
 
 
 
 int main()
 {
-    Rectange Rect;
-    int area;
+    // Rectange Rect;
+    // int area;
 
-    Rect.setHeight(5);
-    Rect.setWidth(7);
+    // Rect.setHeight(5);
+    // Rect.setWidth(7);
 
-    area = Rect.getArea();
-    // Rect.getCost(area)
-    // 输出总花费
-    cout << "paintCost = " << Rect.getCost(area) << endl;
+    // area = Rect.getArea();
+    // // Rect.getCost(area)
+    // // 输出总花费
+    // cout << "paintCost = " << Rect.getCost(area) << endl;
 
+
+    RectangeSecond RectS;
 
     return 0;
 }
